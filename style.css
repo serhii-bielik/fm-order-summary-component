@@ -7,6 +7,7 @@
 }
 
 :root {
+  --clr-white: #ffffff;
   --clr-pale-blue: #e0e8ff;
   --clr-bright-blue: #3829e0;
   --clr-very-pale-blue: #f5f7ff;
@@ -17,4 +18,124 @@
 body {
   font-family: 'Red Hat Display', sans-serif;
   font-size: 16px;
+  color: var(--clr-desaturated-blue);
+  background-color: var(--clr-pale-blue);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-height: 100svh;
+  background-image: url('./images/pattern-background-mobile.svg');
+  background-repeat: repeat-x;
+  background-size: contain;
+}
+
+.order {
+  margin: 0 1.5rem;
+  border-radius: 1rem;
+  text-align: center;
+  overflow: hidden;
+  background-color: var(--clr-white);
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    var(--clr-desaturated-blue) 0px 20px 60px -30px;
+}
+
+.order__head-img {
+  height: 160px;
+  background-image: url('./images/illustration-hero.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.order__content {
+  padding: 2rem 1.5rem;
+}
+
+.order__title {
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: var(--clr-dark-blue);
+  margin-bottom: 1rem;
+}
+
+.order__description {
+  padding: 0 0.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5rem;
+}
+
+.order-row {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  background-color: var(--clr-very-pale-blue);
+  border-radius: 0.5rem;
+}
+.order-row__icon {
+  width: 48px;
+  height: 48px;
+  background-image: url('./images/icon-music.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.order-row__item {
+  font-size: 0.9rem;
+  padding-left: 1rem;
+  text-align: left;
+  flex-grow: 1;
+}
+
+.order-row__item-type {
+  font-weight: 900;
+  color: var(--clr-dark-blue);
+}
+
+.order-row__action {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--clr-bright-blue);
+  transition: all 0.3s ease;
+}
+.order-row__action:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.order__pay {
+  width: 100%;
+  padding: 1rem;
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 1rem;
+  font-weight: 900;
+  color: var(--clr-white);
+  background-color: var(--clr-bright-blue);
+  border: none;
+  border-radius: 0.7rem;
+  box-shadow: var(--clr-bright-blue) 0px 15px 35px -15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.order__pay:hover {
+  opacity: 0.7;
+}
+
+.order-pay {
+  margin-bottom: 1.5rem;
+}
+
+.order__cancel {
+  font-size: 1rem;
+  font-weight: 900;
+  color: var(--clr-desaturated-blue);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.order__cancel:hover {
+  color: var(--clr-dark-blue);
 }

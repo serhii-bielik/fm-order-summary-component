@@ -4,7 +4,7 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 ### Links
 
-- Live Site URL: [live preview](https://serhii-bielik.github.io/fm-stats-preview-card-component/)
+- Live Site URL: [live preview](https://serhii-bielik.github.io/fm-order-summary-component/)
 - Frontend Mentor - [@serhii-bielik](https://www.frontendmentor.io/profile/serhii-bielik)
 
 ### Screenshot
