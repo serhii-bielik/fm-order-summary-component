@@ -1,0 +1,20 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --clr-pale-blue: #e0e8ff;
+  --clr-bright-blue: #3829e0;
+  --clr-very-pale-blue: #f5f7ff;
+  --clr-desaturated-blue: #7280a7;
+  --clr-dark-blue: #1f2f56;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 16px;
+}
