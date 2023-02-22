@@ -34,6 +34,8 @@ body {
 }
 
 .order {
+  max-width: 450px;
+  min-width: 300px;
   margin: 0 1.5rem;
   border-radius: 1rem;
   text-align: center;
@@ -67,6 +69,7 @@ body {
   line-height: 1.5rem;
 }
 
+/* Order row */
 .order-row {
   display: flex;
   align-items: center;
@@ -75,6 +78,7 @@ body {
   background-color: var(--clr-very-pale-blue);
   border-radius: 0.5rem;
 }
+
 .order-row__icon {
   width: 48px;
   height: 48px;
@@ -82,6 +86,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .order-row__item {
   font-size: 0.9rem;
   padding-left: 1rem;
@@ -100,10 +105,12 @@ body {
   color: var(--clr-bright-blue);
   transition: all 0.3s ease;
 }
+
 .order-row__action:hover {
   text-decoration: none;
   opacity: 0.7;
 }
+/* End Order row */
 
 .order__pay {
   width: 100%;
@@ -138,4 +145,49 @@ body {
 
 .order__cancel:hover {
   color: var(--clr-dark-blue);
+}
+
+@media (min-width: 500px) {
+  .container {
+    background-image: url('./images/pattern-background-desktop.svg');
+  }
+
+  body {
+    font-size: 17px;
+  }
+
+  .order {
+    border-radius: 1.2rem;
+  }
+
+  .order__head-img {
+    height: 220px;
+  }
+
+  .order__content {
+    padding: 3rem;
+  }
+
+  .order__title {
+    font-size: 1.7rem;
+  }
+
+  .order-row {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 0.8rem;
+  }
+
+  .order-row__item {
+    font-size: 1.05rem;
+    padding-left: 1.5rem;
+  }
+  
+  .order-row__item-type {
+    padding-bottom: 0.3rem;
+  }
+  
+  .order-row__action {
+    font-size: 0.9rem;
+  }
 }
